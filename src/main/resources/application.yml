@@ -1,0 +1,30 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /api
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5433/amitdb
+        username: dockeruser
+        password: dockerpassword
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+    jackson:
+        serialization:
+            indent_output: true
+logging:
+    level:
+        root: INFO
+        com.example.demo: INFO
+
+#server.port=8080
+#spring.datasource.url=jdbc:postgresql://localhost:5432/amitdb
+#spring.datasource.username=monalisajoshi
+#spring.datasource.password=
+#spring.jpa.hibernate.ddl-auto=update
