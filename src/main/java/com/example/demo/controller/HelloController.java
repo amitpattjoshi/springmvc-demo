@@ -19,7 +19,7 @@ public class HelloController {
 
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping("/hello")
+    @PostMapping("/students")
     public Users createStudent(@RequestBody Student student) {
         Users user = new Users();
         user.setUsername(student.username());
